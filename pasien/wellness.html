@@ -1,0 +1,417 @@
+<!-- wellness.html -->
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness & Gizi Mandiri - RenalCare</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="wellness-style.css">
+</head>
+
+<body>
+
+    <div class="main-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo-box">
+                <div class="logo-icon">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+
+                <div>
+                    <h4>RenalCare</h4>
+                    <p>Nutrition System</p>
+                </div>
+            </div>
+
+            <ul class="sidebar-menu">
+
+                <li class="active">
+                    <a href="dashboard-pasien.html">
+                        <i class="bi bi-grid"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pasien.html">
+                        <i class="bi bi-people"></i>
+                        Pasien
+                    </a>
+                </li>
+
+                <li>
+                    <a href="asesmen.html">
+                        <i class="bi bi-clipboard2-pulse"></i>
+                        Asesmen
+                    </a>
+                </li>
+
+                <li>
+                    <a href="intervensi.html">
+                        <i class="bi bi-capsule"></i>
+                        Intervensi
+                    </a>
+                </li>
+
+                <li>
+                    <a href="monitoring.html">
+                        <i class="bi bi-activity"></i>
+                        Monitoring
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="sidebar-bottom">
+
+                <a href="#">
+                    <i class="bi bi-gear"></i>
+                    Pengaturan
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-question-circle"></i>
+                    Bantuan
+                </a>
+
+            </div>
+
+        </aside>
+
+        <!-- MAIN -->
+        <main class="main-content">
+
+            <!-- TOPBAR -->
+            <div class="topbar">
+
+                <div class="search-box">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Cari info kesehatan...">
+                </div>
+
+                <div class="topbar-right">
+
+                    <i class="bi bi-bell"></i>
+                    <i class="bi bi-clock-history"></i>
+
+                    <img src="https://i.pravatar.cc/100" alt="">
+
+                </div>
+
+            </div>
+
+            <!-- HERO -->
+            <section class="hero-card">
+
+                <div class="hero-left">
+
+                    <h1>Selamat Pagi, Budi! 👋</h1>
+
+                    <p>
+                        Mari pantau kesehatan ginjal dan nutrisi harian Anda
+                        agar tetap bertenaga sepanjang hari.
+                    </p>
+
+                    <div class="hero-stats">
+
+                        <div class="hero-mini-card">
+                            <small>Target Kalori</small>
+                            <h3>1.850 kkal</h3>
+                        </div>
+
+                        <div class="hero-mini-card">
+                            <small>Asupan Air</small>
+                            <h3>1.2 / 1.8 L</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?q=80&w=1200&auto=format&fit=crop"
+                        alt="">
+                </div>
+
+            </section>
+
+            <!-- GRID -->
+            <div class="row g-4 mt-1">
+
+                <!-- LEFT -->
+                <div class="col-lg-8">
+
+                    <!-- IMT -->
+                    <div class="imt-card">
+
+                        <div class="imt-left">
+
+                            <h3>
+                                <i class="bi bi-calculator"></i>
+                                Kalkulator IMT & Kalori
+                            </h3>
+
+                            <div class="mb-3">
+                                <label>Tinggi Badan (cm)</label>
+                                <input type="text" class="form-control" value="170">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Berat Badan (kg)</label>
+                                <input type="text" class="form-control" value="65">
+                            </div>
+
+                            <button class="btn btn-primary">
+                                Hitung Sekarang
+                            </button>
+
+                        </div>
+
+                        <div class="imt-circle-wrap">
+
+                            <div class="imt-circle">
+                                <h2>22.5</h2>
+                                <span>Normal</span>
+                            </div>
+
+                            <p>
+                                Status gizi Anda dalam kategori Normal.
+                                Pertahankan pola makan sehat!
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- MENU -->
+                    <div class="menu-card mt-4">
+
+                        <div class="section-head">
+
+                            <h3>Rekomendasi Menu Seimbang</h3>
+
+                            <a href="#">Lihat Semua</a>
+
+                        </div>
+
+                        <div class="menu-grid">
+
+                            <div class="food-card">
+
+                                <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1200&auto=format&fit=crop"
+                                    alt="">
+
+                                <h5>Oatmeal Buah Segar</h5>
+
+                                <p>Pagi • 350 kkal</p>
+
+                            </div>
+
+                            <div class="food-card">
+
+                                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop"
+                                    alt="">
+
+                                <h5>Salad Salmon Panggang</h5>
+
+                                <p>Siang • 520 kkal</p>
+
+                            </div>
+
+                            <div class="food-card">
+
+                                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=1200&auto=format&fit=crop"
+                                    alt="">
+
+                                <h5>Sup Ikan Sayuran</h5>
+
+                                <p>Malam • 410 kkal</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT -->
+                <div class="col-lg-4">
+
+                    <!-- GAYA HIDUP -->
+                    <div class="life-card">
+
+                        <h3>Gaya Hidup</h3>
+
+                        <div class="life-item">
+
+                            <div>
+                                <strong>Hidrasi</strong>
+                            </div>
+
+                            <span>65%</span>
+
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar hydration"></div>
+                        </div>
+
+                        <div class="life-item mt-4">
+
+                            <div>
+                                <strong>Aktivitas Fisik</strong>
+                            </div>
+
+                            <span>4,250 langkah</span>
+
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar activity"></div>
+                        </div>
+
+                        <div class="life-item mt-4">
+
+                            <div>
+                                <strong>Kualitas Tidur</strong>
+                            </div>
+
+                            <span>7.5 jam</span>
+
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar sleep"></div>
+                        </div>
+
+                    </div>
+
+                    <!-- PROGRESS -->
+                    <div class="weight-card mt-4">
+
+                        <div class="section-head">
+
+                            <h3>Progress BB</h3>
+
+                            <small>30 Hari Terakhir</small>
+
+                        </div>
+
+                        <div class="mini-chart">
+
+                            <div class="mini-bar"></div>
+                            <div class="mini-bar"></div>
+                            <div class="mini-bar active"></div>
+                            <div class="mini-bar"></div>
+
+                        </div>
+
+                        <p class="mt-3">
+                            Turun 1.2kg dibanding bulan lalu
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ANALISIS -->
+            <div class="analysis-card mt-4">
+
+                <h3>
+                    <i class="bi bi-funnel"></i>
+                    Analisis Pola Makan
+                </h3>
+
+                <div class="analysis-grid">
+
+                    <div class="analysis-item">
+
+                        <h5>Protein</h5>
+
+                        <small>Cukup • 65g / 70g</small>
+
+                        <div class="line-progress">
+                            <div class="line-fill blue"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="analysis-item">
+
+                        <h5>Karbohidrat</h5>
+
+                        <small>Normal • 245g / 300g</small>
+
+                        <div class="line-progress">
+                            <div class="line-fill green"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="analysis-item">
+
+                        <h5>Natrium</h5>
+
+                        <small>Berlebih • 2,100mg</small>
+
+                        <div class="line-progress">
+                            <div class="line-fill red"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="analysis-item">
+
+                        <h5>Serat</h5>
+
+                        <small>Kurang • 15g / 30g</small>
+
+                        <div class="line-progress">
+                            <div class="line-fill blue"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="tips-box">
+
+                    <i class="bi bi-info-circle"></i>
+
+                    <p>
+                        Tips: Kurangi penggunaan garam pada menu makan malam dan tambahkan
+                        satu porsi sayuran hijau untuk memenuhi kebutuhan serat harian Anda.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="wellness-script.js"></script>
+
+</body>
+
+</html>

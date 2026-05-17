@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Asesmen Gizi - RenalCare</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="asesmen-style.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div>
+      <div class="logo-area">
+        <div class="logo-icon">
+          <i class="bi bi-heart-pulse-fill"></i>
+        </div>
+
+        <div>
+          <h4>RenalCare</h4>
+          <p>Nutrition System</p>
+        </div>
+      </div>
+
+      <div class="menu-list">
+
+        <a href="dashboard-ahli-gizi.html" class="menu-item">
+          <i class="bi bi-grid"></i>
+          Dashboard
+        </a>
+
+        <a href="#" class="menu-item">
+          <i class="bi bi-people"></i>
+          Pasien
+        </a>
+
+        <a href="asesmen.html" class="menu-item active">
+          <i class="bi bi-clipboard2-pulse"></i>
+          Asesmen
+        </a>
+
+        <a href="intervensi.html" class="menu-item">
+          <i class="bi bi-clipboard2-heart"></i>
+          Intervensi
+        </a>
+
+        <a href="monitoring.html" class="menu-item">
+          <i class="bi bi-bar-chart"></i>
+          Monitoring
+        </a>
+
+      </div>
+    </div>
+
+    <div>
+      <button class="add-btn">
+        <i class="bi bi-plus-circle"></i>
+        Tambah Pasien Baru
+      </button>
+
+      <div class="bottom-menu">
+        <a href="#"><i class="bi bi-gear"></i> Pengaturan</a>
+        <a href="#"><i class="bi bi-question-circle"></i> Bantuan</a>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+
+      <div class="page-title">
+        Asesmen Gizi
+      </div>
+
+      <div class="topbar-right">
+
+        <div class="search-box">
+          <i class="bi bi-search"></i>
+          <input type="text" placeholder="Cari pasien...">
+        </div>
+
+        <i class="bi bi-bell"></i>
+        <i class="bi bi-clock-history"></i>
+
+        <div class="profile">
+          <img src="https://i.pravatar.cc/100?img=32">
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content-grid">
+
+      <!-- LEFT -->
+      <div class="left-content">
+
+        <!-- HEADER -->
+        <div class="section-card top-card">
+
+          <div>
+            <h2>Form Asesmen Gizi Pasien CKD</h2>
+          </div>
+
+          <div class="action-buttons">
+            <button class="outline-btn">
+              <i class="bi bi-stars"></i>
+              Analisis Otomatis
+            </button>
+
+            <button class="primary-btn">
+              Simpan Data
+            </button>
+          </div>
+
+        </div>
+
+        <!-- ANTROPOMETRI -->
+        <div class="section-card">
+
+          <h3>A. Antropometri</h3>
+
+          <div class="row g-3">
+
+            <div class="col-md-4">
+              <label>Berat Badan (kg)</label>
+              <input type="text" class="form-control" value="68">
+            </div>
+
+            <div class="col-md-4">
+              <label>Tinggi Badan (cm)</label>
+              <input type="text" class="form-control" value="170">
+            </div>
+
+            <div class="col-md-4">
+              <label>BB Ideal (kg)</label>
+              <input type="text" class="form-control" value="63.5">
+            </div>
+
+          </div>
+
+          <div class="info-box">
+
+            <div>
+              <small>BMI Calculated</small>
+              <h4>23.5 kg/m²</h4>
+            </div>
+
+            <div>
+              <small>Status Gizi</small>
+              <span class="status-badge">
+                Normal (Gizi Baik)
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- BIOKIMIA -->
+        <div class="section-card">
+
+          <h3>B. Biokimia</h3>
+
+          <div class="row g-3">
+
+            <div class="col-md-6">
+
+  <div class="lab-box">
+
+    <label>Kreatinin (mg/dL)</label>
+
+    <span class="lab-alert">
+      <i class="bi bi-exclamation-triangle"></i>
+      Tinggi
+    </span>
+
+    <input type="text" value="8.4">
+
+  </div>
+
+</div>
+
+            <div class="col-md-6">
+
+  <div class="lab-box">
+
+    <label>eGFR (mL/min/1.73m²)</label>
+
+    <span class="lab-alert">
+      <i class="bi bi-exclamation-triangle"></i>
+      Stage 5
+    </span>
+
+    <input type="text" value="7.2">
+
+  </div>
+
+</div>
+
+            <div class="col-md-6">
+              <label>Ureum (mg/dL)</label>
+              <input type="text" class="form-control danger" value="142">
+            </div>
+
+            <div class="col-md-6">
+              <label>Kalium (mEq/L)</label>
+              <input type="text" class="form-control" value="5.2">
+            </div>
+
+            <div class="col-md-6">
+              <label>Hemoglobin</label>
+              <input type="text" class="form-control danger" value="9.8">
+            </div>
+
+            <div class="col-md-6">
+              <label>Albumin</label>
+              <input type="text" class="form-control" value="3.4">
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- FISIK -->
+        <div class="section-card">
+
+          <h3>C. Fisik & Klinis</h3>
+
+          <div class="row g-3">
+
+            <div class="col-md-6">
+              <label>Diagnosis Medis</label>
+              <textarea class="form-control" rows="4">CKD Stage 5 on Regular HD, Hypertension, Anemia Renal</textarea>
+            </div>
+
+            <div class="col-md-6">
+              <label>Tanda Fisik</label>
+
+              <div class="radio-group">
+                <label><input type="radio" checked> Edema Ringan (+)</label>
+                <label><input type="radio"> Tidak Ada</label>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- POLA MAKAN -->
+        <div class="section-card">
+
+          <h3>D. Pola Makan (Recall 24 Jam)</h3>
+
+          <div class="meal-table">
+
+            <div class="meal-row head">
+              <div>Waktu</div>
+              <div>Menu</div>
+              <div>Kalori</div>
+            </div>
+
+            <div class="meal-row">
+              <div>Pagi</div>
+              <div>Nasi Putih + Telur</div>
+              <div class="blue">350 kkal</div>
+            </div>
+
+            <div class="meal-row">
+              <div>Siang</div>
+              <div>Ikan Pepes + Tempe</div>
+              <div class="blue">420 kkal</div>
+            </div>
+
+            <div class="meal-row">
+              <div>Malam</div>
+              <div>Bubur Ayam</div>
+              <div class="blue">280 kkal</div>
+            </div>
+
+          </div>
+
+          <button class="meal-btn">
+            <i class="bi bi-plus-circle"></i>
+            Tambah Waktu Makan
+          </button>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="right-content">
+
+        <div class="patient-card">
+
+          <img src="https://i.pravatar.cc/120?img=12">
+
+          <h3>Ny. Sarah Kartika</h3>
+          <p>ID: RC-2024-0082</p>
+
+         <div class="mini-card">
+
+  <small>RINGKASAN MEDIS</small>
+
+  <div class="medical-row">
+    <span>Umur: 58 Thn</span>
+    <span>Gender: P</span>
+  </div>
+
+  <p class="job-text">
+    Pekerjaan: Ibu Rumah Tangga
+  </p>
+
+</div>
+
+          <div class="alert-card">
+            <small>ALERGI & PANTANGAN</small>
+            <p>Udang & Seafood</p>
+            <p>Asupan Kalium Tinggi</p>
+          </div>
+
+          <div class="nutrition-card">
+            <small>Kebutuhan Gizi Estimasi</small>
+
+            <div class="nutrition-item">
+              <span>Energi</span>
+              <strong>1.900 kkal</strong>
+            </div>
+
+            <div class="nutrition-item">
+              <span>Protein</span>
+              <strong>75 g</strong>
+            </div>
+
+            <div class="nutrition-item">
+              <span>Cairan</span>
+              <strong>1.200 ml</strong>
+            </div>
+
+          </div>
+
+          <button class="print-btn">
+            <i class="bi bi-printer"></i>
+            Cetak Laporan
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="asesmen-script.js"></script>
+</body>
+</html>

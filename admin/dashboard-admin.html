@@ -1,0 +1,389 @@
+<!-- dashboard-admin.html -->
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - RenalCare</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="dashboard-admin-style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-wrapper">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div>
+
+                <div class="logo">
+
+                    <div class="logo-icon">
+                        <i class="bi bi-hdd-network-fill"></i>
+                    </div>
+
+                    <div>
+                        <h3>RenalCare</h3>
+                        <p>Admin Dashboard</p>
+                    </div>
+
+                </div>
+
+                <ul class="menu">
+
+                    <li>
+                        <a href="dashboard-admin.html" class="active">
+                            <i class="bi bi-grid"></i>
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="user-management.html">
+                            <i class="bi bi-people"></i>
+                            User Management
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="statistik.html">
+                            <i class="bi bi-bar-chart"></i>
+                            Statistik
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="monitoring-system.html">
+                            <i class="bi bi-pc-display"></i>
+                            Monitoring Sistem
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="pengaturan.html">
+                            <i class="bi bi-gear"></i>
+                            Pengaturan
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="sidebar-footer">
+
+                <a href="#">
+                    <i class="bi bi-question-circle"></i>
+                    Bantuan
+                </a>
+
+                <div class="admin-profile">
+
+                    <img src="https://i.pravatar.cc/100?img=12" alt="admin">
+
+                    <div>
+                        <h5>Ahmad Faisal</h5>
+                        <p>Administrator Sistem</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+        <!-- MAIN -->
+        <main class="main-content">
+
+            <!-- TOPBAR -->
+            <div class="topbar">
+
+                <div class="search-box">
+
+                    <i class="bi bi-search"></i>
+
+                    <input type="text" placeholder="Cari data pasien atau log sistem...">
+
+                </div>
+
+                <div class="top-icons">
+
+                    <i class="bi bi-bell-fill"></i>
+                    <i class="bi bi-clock-history"></i>
+
+                </div>
+
+            </div>
+
+            <!-- STATS -->
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <span>TOTAL PENGGUNA</span>
+
+                        <i class="bi bi-people-fill"></i>
+
+                    </div>
+
+                    <h2>1,284</h2>
+
+                    <p><strong>842</strong> Pasien &nbsp;&nbsp; | &nbsp;&nbsp; <strong>442</strong> Ahli Gizi</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <span>SESI AKTIF</span>
+
+                        <i class="bi bi-heart-pulse"></i>
+
+                    </div>
+
+                    <h2>56</h2>
+
+                    <p>↗ +12% dari jam sebelumnya</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <span>UPTIME SERVER</span>
+
+                        <i class="bi bi-cloud-check"></i>
+
+                    </div>
+
+                    <h2>99.98%</h2>
+
+                    <p>● Sistem Berjalan Normal</p>
+
+                </div>
+
+                <div class="stat-card blue-card">
+
+                    <div class="stat-top">
+
+                        <span>SYSTEM HEALTH</span>
+
+                        <i class="bi bi-shield-check"></i>
+
+                    </div>
+
+                    <h3>Optimized</h3>
+
+                    <p>
+                        Semua modul sinkronisasi data nutrisi berjalan tanpa latensi.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- CHART SECTION -->
+            <div class="chart-grid">
+
+                <!-- PERTUMBUHAN -->
+                <div class="chart-card">
+
+                    <div class="card-header-custom">
+
+                        <div>
+
+                            <h3>Pertumbuhan Pengguna</h3>
+
+                            <p>Tren pendaftaran 6 bulan terakhir</p>
+
+                        </div>
+
+                        <button>Tahun 2024</button>
+
+                    </div>
+
+                    <div class="bar-chart">
+
+                        <div class="chart-item">
+                            <div class="bar light"></div>
+                            <div class="bar dark"></div>
+                            <span>Jan</span>
+                        </div>
+
+                        <div class="chart-item">
+                            <div class="bar light medium"></div>
+                            <div class="bar dark medium2"></div>
+                            <span>Feb</span>
+                        </div>
+
+                        <div class="chart-item">
+                            <div class="bar light medium"></div>
+                            <div class="bar dark medium2"></div>
+                            <span>Mar</span>
+                        </div>
+
+                        <div class="chart-item">
+                            <div class="bar light tall"></div>
+                            <div class="bar dark taller"></div>
+                            <span>Apr</span>
+                        </div>
+
+                        <div class="chart-item">
+                            <div class="bar light tall"></div>
+                            <div class="bar dark tall2"></div>
+                            <span>Mei</span>
+                        </div>
+
+                        <div class="chart-item">
+                            <div class="bar light tallest"></div>
+                            <div class="bar dark tallest2"></div>
+                            <span>Jun</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- STATUS -->
+                <div class="status-card">
+
+                    <h3>Status Gizi</h3>
+
+                    <p>Distribusi Makro Nasional</p>
+
+                    <div class="donut-chart">
+
+                        <div class="donut-inner">
+                            <h2>842</h2>
+                            <span>TOTAL PASIEN</span>
+                        </div>
+
+                    </div>
+
+                    <div class="legend">
+
+                        <div><span class="dot blue"></span> Normal (45%)</div>
+                        <div><span class="dot green"></span> Ringan (30%)</div>
+                        <div><span class="dot red"></span> Berat (15%)</div>
+                        <div><span class="dot gray"></span> Lainnya (10%)</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- TABLE -->
+            <div class="table-card">
+
+                <div class="table-header">
+
+                    <div>
+
+                        <h3>Audit Trail Terbaru</h3>
+
+                        <p>Log aktivitas sistem 24 jam terakhir</p>
+
+                    </div>
+
+                    <a href="#">Lihat Semua Log</a>
+
+                </div>
+
+                <div class="table-responsive">
+
+                    <table class="table align-middle">
+
+                        <thead>
+
+                            <tr>
+                                <th>Waktu</th>
+                                <th>User</th>
+                                <th>Aktivitas</th>
+                                <th>Modul</th>
+                                <th>Status</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>14:22:10</td>
+                                <td>dr. Ahmad Faisal</td>
+                                <td>Update Rekomendasi Nutrisi (P0293)</td>
+                                <td>Intervensi</td>
+                                <td><span class="badge success">SUCCESS</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>14:15:05</td>
+                                <td>Admin_System</td>
+                                <td>Backup Database Mingguan</td>
+                                <td>Core Engine</td>
+                                <td><span class="badge completed">COMPLETED</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>13:45:12</td>
+                                <td>Siska Amalia (AG)</td>
+                                <td>Export Laporan Bulanan (PDF)</td>
+                                <td>Monitoring</td>
+                                <td><span class="badge success">SUCCESS</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>13:10:44</td>
+                                <td>Unknown_IP</td>
+                                <td class="text-danger">Failed Login Attempt (Root)</td>
+                                <td>Security</td>
+                                <td><span class="badge blocked">BLOCKED</span></td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+
+                <p>© 2024 RenalCare Nutrition System. v2.4.0-Stable</p>
+
+                <div>
+                    <a href="#">Syarat & Ketentuan</a>
+                    <a href="#">Kebijakan Privasi</a>
+                </div>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+    <script src="dashboard-admin-script.js"></script>
+
+</body>
+
+</html>

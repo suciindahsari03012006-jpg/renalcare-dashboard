@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosis Gizi - RenalCare</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="diagnosis-gizi-style.css">
+</head>
+<body>
+
+<div class="main-wrapper">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div>
+            <div class="logo-area">
+                <div class="logo-box">
+                    <i class="bi bi-heart-pulse"></i>
+                </div>
+
+                <div>
+                    <h4>RenalCare</h4>
+                    <p>Nutrition System</p>
+                </div>
+            </div>
+
+            <ul class="menu-list">
+
+                <li>
+                    <a href="dashboard-ahli-gizi.html">
+                        <i class="bi bi-grid"></i>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pasien.html">
+                        <i class="bi bi-people"></i>
+                        Pasien
+                    </a>
+                </li>
+
+                <li>
+                    <a href="diagnosis-gizi.html" class="active">
+                        <i class="bi bi-clipboard2-pulse"></i>
+                        Asesmen
+                    </a>
+                </li>
+
+                <li>
+                    <a href="intervensi.html">
+                        <i class="bi bi-capsule"></i>
+                        Intervensi
+                    </a>
+                </li>
+
+                <li>
+                    <a href="monitoring-klinis.html">
+                        <i class="bi bi-bar-chart"></i>
+                        Monitoring
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div>
+
+            <button class="add-patient-btn">
+                <i class="bi bi-plus-lg"></i>
+                Tambah Pasien Baru
+            </button>
+
+            <div class="bottom-menu">
+
+                <a href="#">
+                    <i class="bi bi-gear"></i>
+                    Pengaturan
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-question-circle"></i>
+                    Bantuan
+                </a>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- Main -->
+    <main class="main-content">
+
+        <!-- Topbar -->
+        <div class="topbar">
+
+            <div class="search-box">
+                <i class="bi bi-search"></i>
+                <input type="text" placeholder="Cari data pasien atau diagnosis...">
+            </div>
+
+            <div class="topbar-right">
+
+                <i class="bi bi-bell"></i>
+                <i class="bi bi-clock-history"></i>
+
+                <div class="profile-area">
+
+                    <div class="profile-text">
+                        <h6>Dr. Sarah Wijaya</h6>
+                        <p>Ahli Gizi Klinik</p>
+                    </div>
+
+                    <img src="https://i.pravatar.cc/100?img=47" alt="">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Alert -->
+        <div class="critical-alert">
+
+            <div class="alert-left">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+
+                <div>
+                    <h5>Alert Pasien Kritis: Kadar Kreatinin meningkat drastis (7.2 mg/dL) pada Pasien #RE-8821.</h5>
+                    <p>Segera tinjau rencana intervensi.</p>
+                </div>
+            </div>
+
+            <button>Tinjau Sekarang</button>
+
+        </div>
+
+        <!-- Header -->
+        <div class="page-header">
+
+            <div>
+                <div class="breadcrumb-text">
+                    Pasien / <span>Diagnosis Gizi</span>
+                </div>
+
+                <h1>Diagnosis Gizi Pasien</h1>
+            </div>
+
+            <div class="header-buttons">
+
+                <button class="btn-outline-custom">
+                    <i class="bi bi-download"></i>
+                    Ekspor PDF
+                </button>
+
+                <button class="btn-primary-custom">
+                    <i class="bi bi-save"></i>
+                    Simpan Diagnosis
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Grid -->
+        <div class="content-grid">
+
+            <!-- Left -->
+            <div class="left-column">
+
+                <!-- Patient Card -->
+                <div class="card-box patient-card">
+
+                    <div class="patient-top">
+
+                        <img src="https://i.pravatar.cc/100?img=68" alt="">
+
+                        <div>
+                            <h5>PAK Ahmad</h5>
+                            <p>ID: #RE-8821 | 64 Tahun</p>
+                        </div>
+
+                    </div>
+
+                    <div class="info-row">
+                        <span>Risk Level</span>
+                        <div class="badge-danger">TINGGI</div>
+                    </div>
+
+                    <div class="info-row">
+                        <span>Diagnosis Medis</span>
+                        <strong>CKD Stage 5 on HD</strong>
+                    </div>
+
+                    <div class="info-row">
+                        <span>Status Nutrisi</span>
+                        <strong>Malnutrisi Ringan</strong>
+                    </div>
+
+                    <hr>
+
+                    <h6 class="section-title">Hasil Assessment Terakhir</h6>
+
+                    <div class="assessment-grid">
+
+                        <div class="assessment-card">
+                            <span>BMI</span>
+                            <h2>18.5</h2>
+                            <p>Underweight</p>
+                        </div>
+
+                        <div class="assessment-card">
+                            <span>Albumin</span>
+                            <h2 class="danger-text">2.8</h2>
+                            <p>Rendah (g/dL)</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Timeline -->
+                <div class="card-box timeline-card">
+
+                    <h5>Timeline Perkembangan</h5>
+
+                    <div class="timeline">
+
+                        <div class="timeline-item active">
+                            <div class="dot"></div>
+
+                            <div>
+                                <span>24 OKT 2023</span>
+                                <h6>Diagnosis Gizi Ditetapkan</h6>
+                                <p>Intervensi restriksi cairan dan diet tinggi protein dimulai.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="dot"></div>
+
+                            <div>
+                                <span>28 OKT 2023</span>
+                                <h6>Rencana Monitoring IDWG</h6>
+                                <p>Evaluasi berkala kenaikan berat badan antar sesi dialisis.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item faded">
+                            <div class="dot"></div>
+
+                            <div>
+                                <span>04 NOV 2023</span>
+                                <h6>Target Re-assesmen</h6>
+                                <p>Evaluasi kadar albumin pasca intervensi protein.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Right -->
+            <div class="right-column">
+
+                <!-- PES -->
+                <div class="card-box">
+
+                    <div class="section-header">
+                        <h5>Daftar Masalah Gizi (PES)</h5>
+
+                        <a href="#">
+                            <i class="bi bi-plus-circle"></i>
+                            Tambah Masalah
+                        </a>
+                    </div>
+
+                    <!-- PES CARD -->
+                    <div class="pes-card red-border">
+
+                        <div class="pes-top">
+
+                            <div class="pes-number">1</div>
+
+                            <div class="pes-content">
+
+                                <span class="priority red-text">
+                                    PRIORITAS UTAMA
+                                </span>
+
+                                <h4>Intake Cairan Berlebih (NI-2.2)</h4>
+
+                                <p>
+                                    <strong>Etiologi:</strong>
+                                    Kurangnya pengetahuan terkait restriksi cairan pada pasien HD.
+                                </p>
+
+                                <p>
+                                    <strong>Signs & Symptoms:</strong>
+                                    Kenaikan berat badan interdialitik (IDWG) >5% (3.2 kg).
+                                </p>
+
+                            </div>
+
+                            <div class="pes-actions">
+
+                                <div class="category-badge">
+                                    Kategori: Intake
+                                </div>
+
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PES CARD -->
+                    <div class="pes-card blue-border">
+
+                        <div class="pes-top">
+
+                            <div class="pes-number blue-number">2</div>
+
+                            <div class="pes-content">
+
+                                <span class="priority blue-text">
+                                    PRIORITAS SEDANG
+                                </span>
+
+                                <h4>Kekurangan Intake Protein (NI-5.7.1)</h4>
+
+                                <p>
+                                    <strong>Etiologi:</strong>
+                                    Anoreksia akibat uremia dan mual.
+                                </p>
+
+                                <p>
+                                    <strong>Signs & Symptoms:</strong>
+                                    Kadar albumin 2.8 g/dL dan asupan protein < 0.8g/kgBB.
+                                </p>
+
+                            </div>
+
+                            <div class="pes-actions">
+
+                                <div class="category-badge">
+                                    Kategori: Klinis
+                                </div>
+
+                                <i class="bi bi-pencil"></i>
+                                <i class="bi bi-trash"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Notes -->
+                <div class="card-box">
+
+                    <h5>Catatan & Rekomendasi Ahli Gizi</h5>
+
+                    <div class="notes-area">
+
+                        <label>Catatan Observasi</label>
+
+                        <textarea placeholder="Tuliskan catatan detail mengenai kondisi spesifik pasien atau hambatan asupan..."></textarea>
+
+                    </div>
+
+                    <div class="recommendation-grid">
+
+                        <div class="mini-info-card blue-bg">
+                            <h6>
+                                <i class="bi bi-lightbulb"></i>
+                                Tips Edukasi
+                            </h6>
+
+                            <p>
+                                Gunakan media visual 'Gelas Ukur' untuk membantu pasien memahami volume cairan 500ml + urin output.
+                            </p>
+                        </div>
+
+                        <div class="mini-info-card green-bg">
+                            <h6>
+                                <i class="bi bi-cup-hot"></i>
+                                Rekomendasi Menu
+                            </h6>
+
+                            <p>
+                                Sarankan snack tinggi protein rendah kalium untuk mendukung status nutrisi pasien.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="diagnosis-gizi-script.js"></script>
+</body>
+</html>

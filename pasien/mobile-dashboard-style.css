@@ -1,0 +1,424 @@
+/* mobile-dashboard-style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#eef3fa;
+    font-family:'Inter',sans-serif;
+    display:flex;
+    justify-content:center;
+}
+
+.mobile-app{
+    width:100%;
+    max-width:390px;
+    min-height:100vh;
+    background:#f8fbff;
+    padding:20px 18px 110px;
+}
+
+/* HEADER */
+
+.top-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:26px;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-icon{
+    width:40px;
+    height:40px;
+    border-radius:14px;
+    background:#1456c5;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+}
+
+.logo-section h3{
+    font-size:24px;
+    font-weight:800;
+    color:#1456c5;
+}
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:16px;
+}
+
+.header-right i{
+    font-size:20px;
+    color:#334155;
+}
+
+.header-right img{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* GREETING */
+
+.greeting-section{
+    margin-bottom:24px;
+}
+
+.greeting-section h1{
+    font-size:32px;
+    font-weight:800;
+    color:#0f172a;
+    margin-bottom:8px;
+}
+
+.greeting-section p{
+    font-size:15px;
+    color:#64748b;
+    line-height:1.6;
+}
+
+/* CARD */
+
+.mobile-card{
+    background:white;
+    border-radius:28px;
+    padding:22px;
+    margin-bottom:22px;
+    box-shadow:0 10px 30px rgba(15,23,42,0.06);
+    transition:0.3s;
+}
+
+.mobile-card:hover{
+    transform:translateY(-4px);
+}
+
+/* NUTRISI */
+
+.nutrition-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:24px;
+}
+
+.nutrition-header h5{
+    font-size:13px;
+    font-weight:700;
+    color:#64748b;
+}
+
+.nutrition-header span{
+    background:#e0ebff;
+    color:#1456c5;
+    padding:6px 12px;
+    border-radius:14px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.progress-wrapper{
+    display:flex;
+    justify-content:center;
+    margin-bottom:26px;
+}
+
+.circle-progress{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    background:conic-gradient(#1456c5 75%, #dbe7f5 0);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.circle-inner{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    background:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.circle-inner h2{
+    font-size:42px;
+    font-weight:800;
+    color:#1456c5;
+}
+
+.circle-inner p{
+    font-size:14px;
+    color:#64748b;
+}
+
+.nutrition-info{
+    display:flex;
+    gap:14px;
+}
+
+.info-box{
+    flex:1;
+    border-radius:18px;
+    padding:18px;
+    background:#f8fafc;
+}
+
+.info-box small{
+    display:block;
+    margin-bottom:8px;
+    color:#64748b;
+}
+
+.info-box h4{
+    font-size:28px;
+    font-weight:800;
+}
+
+.info-box span{
+    font-size:15px;
+    color:#64748b;
+}
+
+.protein{
+    border-left:5px solid #0f8b8d;
+}
+
+.water{
+    border-left:5px solid #1456c5;
+}
+
+/* MEAL */
+
+.meal-card{
+    background:linear-gradient(135deg,#1456c5,#1d72ff);
+    color:white;
+}
+
+.meal-top{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.meal-top small{
+    font-size:13px;
+}
+
+.meal-top h3{
+    font-size:30px;
+    font-weight:800;
+    margin:10px 0;
+}
+
+.meal-top p{
+    font-size:14px;
+}
+
+.timer-icon{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    background:white;
+    color:#1456c5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+}
+
+.confirm-btn{
+    width:100%;
+    height:54px;
+    border:none;
+    border-radius:18px;
+    background:white;
+    color:#1456c5;
+    font-weight:700;
+}
+
+/* TREND */
+
+.trend-header{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+.trend-header h3{
+    font-size:20px;
+    font-weight:800;
+}
+
+.trend-header span{
+    color:#0f8b8d;
+    font-weight:700;
+}
+
+.mini-chart{
+    display:flex;
+    align-items:flex-end;
+    gap:10px;
+    height:120px;
+    margin-bottom:16px;
+}
+
+.bar{
+    flex:1;
+    background:#dbe7f5;
+    border-radius:12px 12px 0 0;
+}
+
+.bar:nth-child(1){
+    height:70px;
+}
+
+.bar:nth-child(2){
+    height:85px;
+}
+
+.bar:nth-child(3){
+    height:100px;
+}
+
+.bar:nth-child(4){
+    height:96px;
+}
+
+.bar:nth-child(5){
+    height:92px;
+}
+
+.bar.last{
+    height:82px;
+    background:#0f8b8d;
+}
+
+.bar.active{
+    background:#1456c5;
+}
+
+.chart-labels{
+    display:flex;
+    justify-content:space-between;
+    font-size:12px;
+    color:#64748b;
+}
+
+/* BERAT */
+
+.weight-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.weight-card small{
+    color:#64748b;
+}
+
+.weight-card h2{
+    font-size:42px;
+    font-weight:800;
+}
+
+.weight-card span{
+    font-size:18px;
+    color:#64748b;
+}
+
+.plus-btn{
+    width:54px;
+    height:54px;
+    border:none;
+    border-radius:50%;
+    background:#dbeafe;
+    color:#1456c5;
+    font-size:24px;
+}
+
+/* DOCTOR */
+
+.doctor-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.doctor-left{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.doctor-left img{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.doctor-left h4{
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:4px;
+}
+
+.doctor-left p{
+    color:#64748b;
+    font-size:14px;
+}
+
+/* NAVBAR */
+
+.bottom-nav{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    max-width:390px;
+    height:82px;
+    background:white;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border-top:1px solid #e2e8f0;
+}
+
+.bottom-nav a{
+    text-decoration:none;
+    color:#64748b;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:6px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.bottom-nav a i{
+    font-size:22px;
+}
+
+.bottom-nav a.active{
+    background:#1456c5;
+    color:white;
+    padding:12px 16px;
+    border-radius:18px;
+    margin-top:-24px;
+}

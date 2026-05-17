@@ -1,0 +1,380 @@
+<!-- monitoring.html -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Monitoring Gizi - RenalCare</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="monitoring-style.css">
+</head>
+
+<body>
+
+<div class="dashboard-wrapper">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="brand">
+
+      <div class="brand-logo">
+        <i class="bi bi-heart-pulse-fill"></i>
+      </div>
+
+      <div>
+        <h4>RenalCare</h4>
+        <p>Nutrition System</p>
+      </div>
+
+    </div>
+
+    <div class="menu-list">
+
+      <a href="dashboard-ahli-gizi.html" class="menu-item">
+        <i class="bi bi-grid"></i>
+        Dashboard
+      </a>
+
+      <a href="pasien.html" class="menu-item">
+        <i class="bi bi-people"></i>
+        Pasien
+      </a>
+
+      <a href="asesmen.html" class="menu-item">
+        <i class="bi bi-clipboard2-pulse"></i>
+        Asesmen
+      </a>
+
+      <a href="intervensi.html" class="menu-item">
+        <i class="bi bi-clipboard2-check"></i>
+        Intervensi
+      </a>
+
+      <a href="monitoring.html" class="menu-item active">
+        <i class="bi bi-bar-chart"></i>
+        Monitoring
+      </a>
+
+    </div>
+
+    <button class="btn btn-primary add-btn">
+      <i class="bi bi-plus-lg"></i>
+      Tambah Pasien Baru
+    </button>
+
+    <div class="sidebar-bottom">
+
+      <a href="#" class="menu-item">
+        <i class="bi bi-gear"></i>
+        Pengaturan
+      </a>
+
+      <a href="#" class="menu-item">
+        <i class="bi bi-question-circle"></i>
+        Bantuan
+      </a>
+
+    </div>
+
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-content">
+
+    <!-- TOPBAR -->
+    <div class="topbar">
+
+      <h2 class="page-title">
+        Monitoring Harian Pasien
+      </h2>
+
+      <div class="d-flex align-items-center gap-4">
+
+        <div class="search-box">
+
+          <i class="bi bi-search"></i>
+
+          <input
+            type="text"
+            placeholder="Cari nama pasien atau ID..."
+          >
+
+        </div>
+
+        <div class="top-right">
+
+          <i class="bi bi-bell"></i>
+          <i class="bi bi-clock-history"></i>
+
+          <img
+            src="https://i.pravatar.cc/100"
+            class="profile-img"
+          >
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- HEADER -->
+    <div class="patient-header">
+
+      <div class="patient-info">
+
+        <div class="patient-avatar">
+          <i class="bi bi-person"></i>
+        </div>
+
+        <div>
+
+          <h4>Tn. Ahmad Subarjo</h4>
+
+          <p>
+            ID: RC-99210
+            &nbsp;&nbsp;•&nbsp;&nbsp;
+            CKD Stage 4
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="alert-box">
+
+        <i class="bi bi-exclamation-triangle"></i>
+        Alert: Kalium Tinggi
+
+      </div>
+
+    </div>
+
+    <!-- CONTENT -->
+    <div class="row g-4 align-items-start">
+
+      <!-- LEFT -->
+      <div class="col-lg-9">
+
+        <!-- STATUS -->
+        <div class="row g-4">
+
+          <div class="col-md-4">
+
+            <div class="monitor-card">
+
+              <div class="circle-progress blue">
+                <span>75%</span>
+              </div>
+
+              <h6>Protein</h6>
+              <p>30g / 40g</p>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-4">
+
+            <div class="monitor-card">
+
+              <div class="circle-progress green">
+                <span>90%</span>
+              </div>
+
+              <h6>Cairan</h6>
+              <p>450ml / 500ml</p>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-4">
+
+            <div class="monitor-card">
+
+              <div class="circle-progress red">
+                <span>115%</span>
+              </div>
+
+              <h6>Natrium</h6>
+              <p>2300mg / 2000mg</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- TREND -->
+        <div class="trend-card mt-4">
+
+          <div class="trend-header">
+
+            <h5>
+              <i class="bi bi-graph-up-arrow"></i>
+              Tren Berat Badan & Tekanan Darah
+            </h5>
+
+            <span>7 Hari Terakhir</span>
+
+          </div>
+
+          <div class="chart-placeholder">
+
+  <canvas id="trendChart"></canvas>
+
+</div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="col-lg-3">
+
+        <!-- INPUT -->
+        <div class="side-card">
+
+          <h5>
+            <i class="bi bi-fork-knife"></i>
+            Input Makanan Hari Ini
+          </h5>
+
+          <div class="upload-box">
+
+            <i class="bi bi-camera"></i>
+
+            <span>Upload Foto Makanan</span>
+
+          </div>
+
+          <input
+            type="text"
+            class="form-control mt-3"
+            placeholder="Nama makanan..."
+          >
+
+          <button class="btn btn-primary save-btn mt-3">
+            Simpan Catatan
+          </button>
+
+        </div>
+
+        <!-- FLUID -->
+        <div class="side-card mt-4">
+
+          <div class="fluid-header">
+
+            <h6>
+              <i class="bi bi-droplet"></i>
+              Asupan Cairan
+            </h6>
+
+            <strong>450 / 500 ml</strong>
+
+          </div>
+
+          <div class="progress fluid-progress mt-3">
+
+            <div
+              class="progress-bar bg-info"
+              style="width:90%"
+            ></div>
+
+          </div>
+
+          <div class="fluid-buttons mt-3">
+
+            <button>+50ml</button>
+            <button>+100ml</button>
+            <button>+200ml</button>
+
+            <button class="active">
+              Input
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- MEDICINE -->
+        <div class="side-card mt-4">
+
+          <h5>
+            <i class="bi bi-capsule"></i>
+            Jadwal Obat
+          </h5>
+
+          <div class="medicine-item active-med">
+
+            <div>
+              <h6>Phosphate Binder</h6>
+              <small>Diminum saat makan</small>
+            </div>
+
+            <i class="bi bi-check-circle-fill"></i>
+
+          </div>
+
+          <div class="medicine-item">
+
+            <div>
+              <h6>Erythropoietin</h6>
+              <small>Terjadwal: 20:00</small>
+            </div>
+
+            <i class="bi bi-circle"></i>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- REKOMENDASI -->
+    <div class="recommendation-card mt-4">
+
+      <div class="recommend-icon">
+        <i class="bi bi-lightbulb"></i>
+      </div>
+
+      <div>
+
+        <h5>Rekomendasi Diet Sore Ini</h5>
+
+        <p>
+          Pasien telah mencapai 90% batas cairan.
+          Sarankan penggunaan es batu kecil untuk
+          mengurangi rasa haus tanpa menambah
+          asupan cairan berlebih. Batasi sayuran
+          tinggi kalium seperti bayam untuk makan malam.
+        </p>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="monitoring-script.js"></script>
+
+</body>
+</html>

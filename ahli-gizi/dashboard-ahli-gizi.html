@@ -1,0 +1,482 @@
+<!-- FILE: dashboard-ahli-gizi.html -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Dashboard Ahli Gizi - RenalCare</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="dashboard-style.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-wrapper">
+
+  <!-- SIDEBAR -->
+
+  <aside class="sidebar">
+
+    <div>
+
+      <div class="logo">
+
+        <div class="logo-icon">
+          <i class="bi bi-heart-pulse-fill"></i>
+        </div>
+
+        <div>
+          <h3>RenalCare</h3>
+          <span>Nutrition System</span>
+        </div>
+
+      </div>
+
+      <!-- MENU -->
+
+      <ul class="sidebar-menu">
+
+        <li>
+          <a href="dashboard-ahli-gizi.html" class="active">
+            <i class="bi bi-grid"></i>
+            Dashboard
+          </a>
+        </li>
+
+        <li>
+          <a href="pasien.html">
+            <i class="bi bi-people"></i>
+            Pasien
+          </a>
+        </li>
+
+        <li>
+          <a href="asesmen.html">
+            <i class="bi bi-clipboard-check"></i>
+            Asesmen
+          </a>
+        </li>
+
+        <li>
+          <a href="intervensi.html">
+            <i class="bi bi-hospital"></i>
+            Intervensi
+          </a>
+        </li>
+
+        <li>
+          <a href="monitoring.html">
+            <i class="bi bi-bar-chart"></i>
+            Monitoring
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+    <div>
+
+      <button class="add-btn">
+        <i class="bi bi-plus-circle"></i>
+        Tambah Pasien Baru
+      </button>
+
+      <div class="bottom-menu">
+
+        <a href="#">
+          <i class="bi bi-gear"></i>
+          Pengaturan
+        </a>
+
+        <a href="#">
+          <i class="bi bi-question-circle"></i>
+          Bantuan
+        </a>
+
+      </div>
+
+    </div>
+
+  </aside>
+
+  <!-- MAIN -->
+
+  <main class="main-content">
+
+    <!-- TOPBAR -->
+
+    <div class="topbar">
+
+      <div class="search-box">
+
+        <i class="bi bi-search"></i>
+
+        <input
+          type="text"
+          placeholder="Cari data pasien atau rekam medis..."
+        >
+
+      </div>
+
+      <div class="topbar-right">
+
+        <i class="bi bi-bell"></i>
+
+        <i class="bi bi-clock-history"></i>
+
+        <div class="profile">
+
+          <div>
+            <h5>Dr. Sarah Anindya</h5>
+            <span>Ahli Gizi Klinik</span>
+          </div>
+
+          <img
+            src="https://i.pravatar.cc/100?img=47"
+            alt="profile"
+          >
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- TITLE -->
+
+    <div class="page-title">
+
+      <h1>Ringkasan Nutrisi Klinis</h1>
+
+      <p>
+        Pantau kondisi dan kepatuhan diet pasien secara real-time.
+      </p>
+
+    </div>
+
+    <!-- STATS -->
+
+    <div class="stats-grid">
+
+      <div class="stat-card">
+
+        <div class="stat-icon blue">
+          <i class="bi bi-people"></i>
+        </div>
+
+        <div>
+          <span>Total Pasien Aktif</span>
+          <h2>142</h2>
+        </div>
+
+      </div>
+
+      <div class="stat-card danger">
+
+        <div class="stat-icon red">
+          <i class="bi bi-exclamation-triangle"></i>
+        </div>
+
+        <div>
+          <span>Pasien Risiko Tinggi</span>
+          <h2>12</h2>
+        </div>
+
+      </div>
+
+      <div class="stat-card">
+
+        <div class="stat-icon cyan">
+          <i class="bi bi-calendar2-check"></i>
+        </div>
+
+        <div>
+          <span>Konsultasi Hari Ini</span>
+          <h2>08</h2>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CONTENT GRID -->
+
+    <div class="content-grid">
+
+      <!-- LEFT -->
+
+      <div>
+
+        <!-- TABLE -->
+
+        <div class="dashboard-card">
+
+          <div class="card-header-custom">
+
+            <h3>Daftar Pasien Terbaru</h3>
+
+            <a href="#">
+              Lihat Semua
+            </a>
+
+          </div>
+
+          <div class="table-responsive">
+
+            <table class="table align-middle">
+
+              <thead>
+
+                <tr>
+                  <th>Nama Pasien</th>
+                  <th>Status</th>
+                  <th>Risiko</th>
+                  <th>Aksi</th>
+                </tr>
+
+              </thead>
+
+              <tbody>
+
+                <tr>
+
+                  <td>
+                    <div class="patient-cell">
+
+                      <div class="avatar">BS</div>
+
+                      <span>Budi Santoso</span>
+
+                    </div>
+                  </td>
+
+                  <td>
+                    <span class="badge-status blue-badge">
+                      Dialisis
+                    </span>
+                  </td>
+
+                  <td>
+                    <span class="risk high">
+                      ● Tinggi
+                    </span>
+                  </td>
+
+                  <td class="action-icons">
+                    <i class="bi bi-eye"></i>
+                    <i class="bi bi-pencil-square"></i>
+                  </td>
+
+                </tr>
+
+                <tr>
+
+                  <td>
+                    <div class="patient-cell">
+
+                      <div class="avatar cyan-avatar">AW</div>
+
+                      <span>Ani Wijaya</span>
+
+                    </div>
+                  </td>
+
+                  <td>
+                    <span class="badge-status gray-badge">
+                      Pre-Dialisis
+                    </span>
+                  </td>
+
+                  <td>
+                    <span class="risk medium">
+                      ● Sedang
+                    </span>
+                  </td>
+
+                  <td class="action-icons">
+                    <i class="bi bi-eye"></i>
+                    <i class="bi bi-pencil-square"></i>
+                  </td>
+
+                </tr>
+
+                <tr>
+
+                  <td>
+                    <div class="patient-cell">
+
+                      <div class="avatar gray-avatar">RT</div>
+
+                      <span>Rian Tanuwijaya</span>
+
+                    </div>
+                  </td>
+
+                  <td>
+                    <span class="badge-status blue-badge">
+                      Dialisis
+                    </span>
+                  </td>
+
+                  <td>
+                    <span class="risk low">
+                      ● Rendah
+                    </span>
+                  </td>
+
+                  <td class="action-icons">
+                    <i class="bi bi-eye"></i>
+                    <i class="bi bi-pencil-square"></i>
+                  </td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+
+        </div>
+
+        <!-- CHART -->
+
+        <div class="dashboard-card chart-card">
+
+          <div class="chart-header">
+
+            <div>
+
+              <h3>Kepatuhan Diet Keseluruhan</h3>
+
+              <p>Data kepatuhan 7 hari terakhir</p>
+
+            </div>
+
+          </div>
+
+          <div class="chart-bars">
+
+            <div class="bar"></div>
+            <div class="bar small"></div>
+            <div class="bar"></div>
+            <div class="bar danger-bar"></div>
+            <div class="bar"></div>
+            <div class="bar small"></div>
+            <div class="bar medium"></div>
+
+          </div>
+
+          <div class="days">
+
+            <span>Sen</span>
+            <span>Sel</span>
+            <span>Rab</span>
+            <span>Kam</span>
+            <span>Jum</span>
+            <span>Sab</span>
+            <span>Min</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+
+      <div class="dashboard-card activity-card">
+
+        <h3>Aktivitas Terbaru</h3>
+
+        <div class="activity-list">
+
+          <div class="activity-item">
+
+            <div class="activity-icon blue-bg">
+              <i class="bi bi-fork-knife"></i>
+            </div>
+
+            <div>
+
+              <h5>
+                Budi Santoso menginput data makan siang.
+              </h5>
+
+              <p>
+                Nasi 100g, Ikan Pepes, Tumis Labu.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="activity-item">
+
+            <div class="activity-icon cyan-bg">
+              <i class="bi bi-droplet"></i>
+            </div>
+
+            <div>
+
+              <h5>
+                Ani Wijaya menginput asupan cairan.
+              </h5>
+
+              <p>
+                Total: 450ml / Target: 1000ml
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="activity-item">
+
+            <div class="activity-icon gray-bg">
+              <i class="bi bi-clipboard2-pulse"></i>
+            </div>
+
+            <div>
+
+              <h5>
+                Rian Tanuwijaya update berat badan.
+              </h5>
+
+              <p>
+                68.2 kg (+0.5kg dari kemarin)
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <button class="activity-btn">
+          Lihat Semua Aktivitas
+        </button>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="dashboard-script.js"></script>
+
+</body>
+</html>

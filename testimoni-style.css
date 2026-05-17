@@ -1,0 +1,544 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f5f7fb;
+color:#0f172a;
+}
+
+.container{
+max-width:1180px;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#fff;
+padding:20px 0;
+border-bottom:1px solid #edf2f7;
+}
+
+.logo-blue{
+font-weight:800;
+color:#1456c5;
+font-size:26px;
+}
+
+.logo-gray{
+font-size:13px;
+color:#64748b;
+margin-left:6px;
+}
+
+.nav-link{
+font-size:14px;
+font-weight:500;
+margin:0 14px;
+color:#475569 !important;
+transition:.3s;
+}
+
+.nav-link:hover{
+color:#1456c5 !important;
+}
+
+.nav-link.active{
+color:#1456c5 !important;
+font-weight:700;
+}
+
+.nav-right{
+display:flex;
+align-items:center;
+gap:18px;
+}
+
+.nav-right i{
+font-size:18px;
+color:#475569;
+cursor:pointer;
+}
+
+.consult-btn{
+height:42px;
+padding:0 20px;
+border:none;
+border-radius:12px;
+background:#1456c5;
+color:#fff;
+font-weight:600;
+transition:.3s;
+}
+
+.consult-btn:hover{
+transform:translateY(-2px);
+}
+
+/* HERO */
+
+.hero-section{
+padding:80px 0 50px;
+text-align:center;
+}
+
+.hero-badge{
+display:inline-block;
+padding:10px 18px;
+background:#dbeafe;
+color:#1456c5;
+font-size:13px;
+font-weight:700;
+border-radius:999px;
+margin-bottom:26px;
+}
+
+.hero-section h1{
+font-size:56px;
+font-weight:800;
+line-height:1.15;
+margin-bottom:24px;
+}
+
+.hero-section p{
+max-width:720px;
+margin:auto;
+font-size:17px;
+line-height:1.8;
+color:#64748b;
+}
+
+/* STATS */
+
+.stats-section{
+padding-bottom:50px;
+}
+
+.stat-card{
+background:#fff;
+border-radius:24px;
+padding:42px;
+text-align:center;
+box-shadow:0 4px 18px rgba(15,23,42,.05);
+transition:.3s;
+}
+
+.stat-card:hover{
+transform:translateY(-4px);
+}
+
+.stat-card h2{
+font-size:48px;
+font-weight:800;
+color:#1456c5;
+margin-bottom:12px;
+}
+
+.stat-card span{
+font-size:15px;
+color:#64748b;
+}
+
+.stars{
+color:#fbbf24;
+margin-bottom:10px;
+}
+
+/* TESTIMONIAL */
+
+.testimonial-section{
+padding-bottom:60px;
+}
+
+.main-testimonial,
+.hydration-card,
+.electrolyte-card{
+background:#fff;
+border-radius:28px;
+padding:34px;
+box-shadow:0 4px 18px rgba(15,23,42,.05);
+height:100%;
+}
+
+.profile-top{
+display:flex;
+align-items:center;
+gap:16px;
+margin-bottom:20px;
+}
+
+.profile-top img{
+width:58px;
+height:58px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.profile-top h4{
+font-size:24px;
+font-weight:700;
+margin-bottom:4px;
+}
+
+.profile-top span{
+font-size:14px;
+color:#64748b;
+}
+
+.rating{
+color:#fbbf24;
+font-size:18px;
+margin-bottom:18px;
+}
+
+.main-testimonial p,
+.hydration-card p,
+.electrolyte-content p{
+font-size:15px;
+line-height:1.9;
+color:#475569;
+margin-bottom:28px;
+}
+
+.comparison-box{
+display:grid;
+grid-template-columns:1fr 1fr;
+border:1px solid #e2e8f0;
+border-radius:16px;
+overflow:hidden;
+}
+
+.comparison-box div{
+padding:24px;
+}
+
+.comparison-box small{
+font-size:12px;
+color:#64748b;
+}
+
+.comparison-box h5{
+font-size:30px;
+font-weight:800;
+margin-top:6px;
+color:#ef4444;
+}
+
+.green{
+color:#14b8a6 !important;
+}
+
+/* EXPERT */
+
+.expert-card{
+background:#1456c5;
+color:#fff;
+border-radius:28px;
+padding:34px;
+height:100%;
+}
+
+.expert-card i{
+font-size:34px;
+margin-bottom:24px;
+}
+
+.expert-card h3{
+font-size:28px;
+font-weight:700;
+margin-bottom:18px;
+}
+
+.expert-card p{
+line-height:1.9;
+font-size:15px;
+margin-bottom:28px;
+}
+
+.expert-profile{
+display:flex;
+align-items:center;
+gap:14px;
+}
+
+.expert-profile img{
+width:54px;
+height:54px;
+border-radius:50%;
+}
+
+.expert-profile h6{
+margin-bottom:4px;
+font-size:16px;
+font-weight:700;
+}
+
+.expert-profile span{
+font-size:13px;
+opacity:.8;
+}
+
+/* SECOND ROW */
+
+.second-row{
+margin-top:8px;
+}
+
+.hydration-card{
+background:#eaf1ff;
+}
+
+.hydration-box{
+background:#fff;
+padding:18px;
+border-radius:16px;
+margin-top:24px;
+}
+
+.hydration-title{
+font-size:14px;
+margin-bottom:10px;
+}
+
+.progress{
+height:10px;
+border-radius:999px;
+background:#dbeafe;
+margin-bottom:8px;
+}
+
+.progress-bar{
+width:92%;
+background:#1456c5;
+}
+
+.hydration-percent{
+font-size:13px;
+font-weight:700;
+text-align:right;
+color:#1456c5;
+}
+
+/* ELECTROLYTE */
+
+.electrolyte-card{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:40px;
+}
+
+.electrolyte-content{
+flex:1;
+}
+
+.electrolyte-content h3{
+font-size:34px;
+font-weight:800;
+margin-bottom:18px;
+}
+
+.mini-profile{
+display:flex;
+align-items:center;
+gap:12px;
+margin-top:22px;
+}
+
+.mini-profile img{
+width:42px;
+height:42px;
+border-radius:50%;
+}
+
+.mini-profile span{
+font-size:14px;
+color:#64748b;
+}
+
+.mini-chart{
+width:220px;
+background:#f8fafc;
+padding:20px;
+border-radius:20px;
+text-align:center;
+}
+
+.chart-bars{
+display:flex;
+align-items:flex-end;
+justify-content:center;
+gap:18px;
+height:160px;
+margin-top:18px;
+}
+
+.bar{
+width:42px;
+border-radius:12px 12px 0 0;
+}
+
+.bar.pink{
+height:140px;
+background:#fecaca;
+}
+
+.bar.teal{
+height:90px;
+background:#0f766e;
+}
+
+.chart-labels{
+display:flex;
+justify-content:space-around;
+margin-top:12px;
+font-size:12px;
+font-weight:700;
+}
+
+/* CTA */
+
+.cta-section{
+padding-bottom:70px;
+}
+
+.cta-box{
+background:linear-gradient(135deg,#1456c5,#2563eb);
+padding:60px;
+border-radius:32px;
+text-align:center;
+color:#fff;
+position:relative;
+overflow:hidden;
+}
+
+.cta-box::after{
+content:'';
+position:absolute;
+width:260px;
+height:260px;
+border-radius:50%;
+background:rgba(255,255,255,.08);
+right:-80px;
+top:-80px;
+}
+
+.cta-box h2{
+font-size:42px;
+font-weight:800;
+margin-bottom:18px;
+position:relative;
+z-index:2;
+}
+
+.cta-box p{
+font-size:17px;
+margin-bottom:34px;
+position:relative;
+z-index:2;
+}
+
+.cta-buttons{
+display:flex;
+justify-content:center;
+gap:18px;
+position:relative;
+z-index:2;
+}
+
+.btn-white{
+height:54px;
+padding:0 28px;
+border:none;
+border-radius:14px;
+background:#fff;
+color:#1456c5;
+font-weight:700;
+}
+
+.btn-outline-white{
+height:54px;
+padding:0 28px;
+border-radius:14px;
+border:2px solid rgba(255,255,255,.5);
+background:transparent;
+color:#fff;
+font-weight:700;
+}
+
+/* FOOTER */
+
+footer{
+background:#fff;
+padding:34px 0;
+border-top:1px solid #e2e8f0;
+}
+
+.footer-wrap{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.footer-wrap h4{
+font-weight:800;
+color:#1456c5;
+margin-bottom:8px;
+}
+
+.footer-wrap p{
+color:#64748b;
+font-size:14px;
+}
+
+.footer-links{
+display:flex;
+gap:24px;
+}
+
+.footer-links a{
+text-decoration:none;
+font-size:14px;
+color:#64748b;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+.hero-section h1{
+font-size:42px;
+}
+
+.electrolyte-card{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.mini-chart{
+width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-section h1{
+font-size:34px;
+}
+
+.cta-buttons{
+flex-direction:column;
+}
+
+.footer-wrap{
+flex-direction:column;
+align-items:flex-start;
+}
+
+}

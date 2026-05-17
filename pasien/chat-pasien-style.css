@@ -1,0 +1,270 @@
+/* chat-pasien-style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f7fb;
+    font-family:'Inter',sans-serif;
+    display:flex;
+    justify-content:center;
+    min-height:100vh;
+}
+
+.mobile-chat{
+    width:100%;
+    max-width:380px;
+    background:#fff;
+    min-height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+
+/* HEADER */
+
+.chat-header{
+    height:86px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px;
+    border-bottom:1px solid #edf2f7;
+}
+
+.header-left{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.back-btn{
+    color:#1456c5;
+    font-size:22px;
+}
+
+.header-left img{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.doctor-info h4{
+    font-size:15px;
+    font-weight:700;
+    margin-bottom:2px;
+    color:#1456c5;
+}
+
+.doctor-info p{
+    font-size:12px;
+    color:#64748b;
+}
+
+.header-icons{
+    display:flex;
+    gap:14px;
+}
+
+.header-icons i{
+    font-size:20px;
+    color:#334155;
+}
+
+/* CHAT BODY */
+
+.chat-body{
+    padding:20px 16px 180px;
+}
+
+.date-divider{
+    width:max-content;
+    margin:auto;
+    background:#f1f5f9;
+    color:#64748b;
+    padding:6px 16px;
+    border-radius:20px;
+    font-size:12px;
+    margin-bottom:24px;
+}
+
+.message-row{
+    display:flex;
+    margin-bottom:20px;
+}
+
+.message-row.right{
+    justify-content:flex-end;
+}
+
+.avatar-small img{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+.message{
+    max-width:245px;
+    padding:16px;
+    border-radius:20px;
+    font-size:15px;
+    line-height:1.7;
+}
+
+.message.doctor{
+    background:#f1f5f9;
+    color:#1e293b;
+    border-top-left-radius:6px;
+}
+
+.message.patient{
+    background:#1456c5;
+    color:white;
+    border-top-right-radius:6px;
+}
+
+.chat-time{
+    display:block;
+    font-size:11px;
+    color:#94a3b8;
+    margin-top:6px;
+}
+
+.right-time{
+    text-align:right;
+}
+
+.right-time i{
+    color:#1456c5;
+}
+
+/* IMAGE */
+
+.food-image-card{
+    width:200px;
+    margin-left:auto;
+    margin-top:10px;
+    border:6px solid #1456c5;
+    border-radius:22px;
+    overflow:hidden;
+}
+
+.food-image-card img{
+    width:100%;
+    display:block;
+}
+
+/* QUICK BUTTON */
+
+.quick-action{
+    position:fixed;
+    bottom:120px;
+    width:100%;
+    max-width:380px;
+    background:#fff;
+    padding:10px 12px;
+    display:flex;
+    gap:10px;
+}
+
+.quick-action button{
+    flex:1;
+    border:none;
+    background:#f1f5f9;
+    height:40px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:600;
+    color:#475569;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    transition:0.3s;
+}
+
+.quick-action button:hover{
+    background:#dbeafe;
+}
+
+/* INPUT */
+
+.chat-input-area{
+    position:fixed;
+    bottom:64px;
+    width:100%;
+    max-width:380px;
+    background:#fff;
+    padding:10px 14px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.chat-input-area input{
+    flex:1;
+    height:48px;
+    border:none;
+    background:#f8fafc;
+    border-radius:16px;
+    padding:0 16px;
+    outline:none;
+    font-size:14px;
+}
+
+.emoji-btn,
+.attach-btn{
+    border:none;
+    background:none;
+    font-size:22px;
+    color:#64748b;
+}
+
+/* NAVBAR */
+
+.bottom-navbar{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    max-width:380px;
+    height:70px;
+    background:#fff;
+    border-top:1px solid #e2e8f0;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.bottom-navbar a{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:4px;
+    color:#475569;
+    font-size:11px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.bottom-navbar a i{
+    font-size:20px;
+}
+
+.bottom-navbar a.active{
+    background:#1456c5;
+    color:white;
+    padding:12px 14px;
+    border-radius:16px;
+    margin-top:-10px;
+}
+
+
+.bottom-navbar a:hover{
+    color:#1456c5;
+}
